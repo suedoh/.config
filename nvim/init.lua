@@ -30,11 +30,11 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 vim.api.nvim_create_autocmd("BufEnter", { command = [[set formatoptions-=cro]] })
 
 -- open telescope when neovim starts only if no other plugin is opening
-vim.api.nvim_create_autocmd("VimEnter", {
-  callback = function()
-    vim.cmd("silent! lua require('telescope.builtin').find_files()")
-  end,
-})
+-- vim.api.nvim_create_autocmd("VimEnter", {
+--   callback = function()
+--     vim.cmd("silent! lua require('telescope.builtin').find_files()")
+--   end,
+-- })
 
 function GitBranch()
   local ok, _ = os.rename(vim.fn.getcwd() .. '/.git', vim.fn.getcwd() .. '/.git')
