@@ -297,4 +297,4 @@ bar {
 # exec --no-startup-id xfce4-power-manager
 
 # Wallpaper
-# exec feh --bg-fill /home/dev/Pictures/wallpaper/jap-night.jpg
+exec feh --bg-fill $HOME/pictures/wallpaper/tokyo-night-alley.jpg
