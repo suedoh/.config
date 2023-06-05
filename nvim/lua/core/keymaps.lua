@@ -32,3 +32,9 @@ vim.keymap.set("n", "<leader>Y", [["+Y]])
 
 -- copy between {}
 vim.keymap.set('n', 'YY', 'va{Vy')
+
+-- delete within []
+vim.keymap.set('n', 'di', 'di]')
+
+-- delete within {}
+vim.keymap.set('n', 'dib', 'di}')
